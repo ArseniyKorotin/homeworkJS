@@ -1,0 +1,11 @@
+'use strict';
+const a6 = 2;
+const a7 = 3;
+const a8 = 53;
+const a9 = 50;
+const a10 = '75kg';
+alert(2);
+alert(3);
+alert(53);
+alert(50);
+alert('75kg');

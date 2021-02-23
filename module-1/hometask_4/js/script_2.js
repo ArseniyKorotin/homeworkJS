@@ -1,8 +1,9 @@
 'use strict';
-const children = '0-16';
-const adults = '17-60';
-const retirees = '61-100';
 const maksim = 55;
-console.log(adults);
-// if(maksim >= children && maksim <= retirees) {
-//     console.log(maksim);
+if(maksim <=16) {
+    console.log('child');
+} else if(maksim >=17 && maksim <=60) {
+    console.log(`adults`);
+} else if(maksim >=61 && maksim <=100) {
+    console.log(`retirees`)
+}

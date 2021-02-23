@@ -1,4 +1,4 @@
 'use strict';
-const userName = 'Дякуємо, Олександро!';
+const userName = 'Олександро!';
 const payment = 'До сплати 300 гривень';
-alert(`${userName} ${payment}`);
+alert(`Дякуємо, ${userName} ${payment}`);

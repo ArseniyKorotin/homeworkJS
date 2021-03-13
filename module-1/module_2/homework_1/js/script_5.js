@@ -1,6 +1,7 @@
 'use strict';
-const styles = ['Джаз', 'Блюз'];
-styles[2] = 'Рок-н-ролл';
-styles[1] = 'Класика';
-styles[0] = 'Реп Реггі';
+let styles = ['Джаз', 'Блюз'];
+styles.push('Рок-н-ролл');
+styles[1] = 'Классика';
+styles.shift(0);
+styles.unshift('Реп Реггі');
 console.log(styles);

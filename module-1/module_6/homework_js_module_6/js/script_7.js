@@ -1,7 +1,4 @@
 "use strict";
-const calculateTotalBalance = (users) =>
-  users.reduce((totalBalance, user) => totalBalance + user.balance, 0);
-console.log(calculateTotalBalance(users)); // 20916
 const users = [
   {
     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
@@ -88,3 +85,6 @@ const users = [
     age: 39,
   },
 ];
+const calculateTotalBalance = (users) =>
+  users.reduce((totalBalance, user) => totalBalance + user.balance, 0);
+console.log(calculateTotalBalance(users)); // 20916

@@ -1,16 +1,15 @@
 'use strict';
-let message = prompt("Кто там?", '');
-if (message === 'Admin') {
-  const ADMIN_PASSWORD = prompt('Введіть ваш пароль', '');
-  if (ADMIN_PASSWORD == 'jqueryismyjam') {
-    alert('Ласкаво просимо!');
-  } else if (ADMIN_PASSWORD === '' || ADMIN_PASSWORD === null) {
-    alert('Скасовано користувачем!');
-  } else {
-    alert('Доступ заборонений, невірний пароль!');
-  }
-} else if (message === '' || message === null) {
-  alert('Скасовано користувачем!');
+const ADMIN_PASSWORD = "jqueryismyjam";
+let message;
+
+let input = prompt("Введіть пароль");
+
+if (input === null) {
+    message = "Отменено пользователем!";
+} else if (input === ADMIN_PASSWORD) {
+    message = "Добро пожаловать!";
 } else {
-  alert('Я вас не знаю');
+    message = "Доступ запрещен, неверный пароль!";
 }
+
+alert(message);

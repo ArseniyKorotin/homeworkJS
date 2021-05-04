@@ -8,4 +8,4 @@ const inputs = function () {
     nameOutput.innerHTML = input.value;
   }
 };
-input.addEventListener("blur", inputs);
+input.addEventListener("input", inputs);

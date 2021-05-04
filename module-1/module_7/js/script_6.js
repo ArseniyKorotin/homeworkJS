@@ -9,4 +9,4 @@ const inputVAlid = function () {
     inputLength.classList.add("invalid");
   }
 };
-inputLength.addEventListener("blur", inputVAlid);
+inputLength.addEventListener("input", inputVAlid);
